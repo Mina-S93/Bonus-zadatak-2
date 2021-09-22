@@ -7,4 +7,12 @@ questions.forEach(q => q.addEventListener('click', () => {
    q.classList.toggle('paragraf')                                   //change color of question
 }))
 
+let img = document.querySelector('img');
 
+questions.forEach(q => q.addEventListener('mouseover', () => {      //move box left on mouseover
+   img.classList.add('mouse');
+}))
+
+questions.forEach(q => q.addEventListener('mouseout', () => {      //move box in on mouseout
+   img.classList.remove('mouse');
+}))
