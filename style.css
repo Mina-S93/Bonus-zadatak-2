@@ -23,6 +23,7 @@ body{
     width: 60vw;
     min-height: 70vh;
     border-radius: 25px;
+    box-shadow: 0 40px 40px hsl(240, 62%, 58%);
 }
 
 .picture{
@@ -38,6 +39,7 @@ body{
     top: 41%;
     left: -25%;
     width: 50%;
+    transition: 0.5s;
 }
 
 .faq{
@@ -92,6 +94,10 @@ body{
     font-weight: 700;
 }
 
+.mouse{
+    left: -35% !important;
+    transition: 0.5s;
+}
 @media screen and (max-width:500px) {
     body{
         padding: 10vh 0; 
