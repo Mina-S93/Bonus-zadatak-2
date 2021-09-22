@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.container{
+    background-color: #fafafa;
+    display: flex;
+    width: 60vw;
+    min-height: 70vh;
+    border-radius: 25px;
+}
+
+.picture{
+    background: url(images/illustration-woman-online-desktop.svg) no-repeat, url(images/bg-pattern-desktop.svg) no-repeat;
+    background-size: 120%, 250%;
+    background-position: 100% 50%, 100% 65%;
+    flex-basis: 40%;
+    position: relative;
+}
+
+.picture picture img{
+    position: absolute;
+    top: 41%;
+    left: -25%;
+    width: 50%;
+}
+
+.faq{
+    padding: 0% 10%;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.faq h1{
+    margin-bottom: 10%;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.faq div{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding: 4% 0;
+    color: hsl(237, 12%, 33%);
+}
+
+.faq div p:first-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq div p:first-child:hover{
+    color: hsl(14, 88%, 65%);
+}
+
+.faq div p:last-child{
+    display: none;
+    width: 100%;
+    padding-top: 2%;
+    color: hsl(240, 6%, 50%);
+}
+
+.block{
+    display: block !important;
+}
+
+.arrow-transform{
+    transform: rotateX(180deg);
+}
+
+.paragraf{
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+}
+
+@media screen and (max-width:500px) {
+    body{
+        padding: 10vh 0; 
+    }
+
+    .container{
+        width: 85%;
+        min-height: 75vh;
+        flex-direction: column;
+        margin-top: 20%;
+    }
+
+    .picture{
+        min-height: 20vh;
+        background: url(images/bg-pattern-mobile.svg) no-repeat;
+        background-size: 67%;
+        background-position: 55% 50%;
+        position: static;
+    }
+
+    .picture picture img{
+        position: absolute;
+        top: 6%;
+        left: 15%;
+        width: 65%;
+    }
+
+    .faq{
+        padding: 10% 5% 15% 5%;
+    }
+
+    .faq h1{
+        text-align: center;
+    }
+
+    .faq div p:last-child{
+        width: 85%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 850px) {
+    .container{
+        width: 80%;
+    }
+}
